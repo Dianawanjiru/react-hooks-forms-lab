@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+
 import { v4 as uuid } from "uuid";
 
 function ItemForm({onItemFormSubmit}) {
@@ -6,7 +7,7 @@ function ItemForm({onItemFormSubmit}) {
   const [itemCategory, setItemCategory] = useState("produce")
 
   function handleItemNameChange (e){
-    setItemName(e.taret.value)
+    setItemName(e.target.value)
 
   };
 
